@@ -1,0 +1,17 @@
+version: '2'
+
+networks:
+  local:
+    driver: 'bridge'
+
+services:
+  elasticmq:
+    build: .
+    ports:
+      - "9324:9324"
+    environment: {}
+    networks:
+      local:
+        aliases:
+          - elasticmq.local
+    restart: 'on-failure:30'

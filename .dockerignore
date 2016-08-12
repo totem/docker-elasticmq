@@ -1,0 +1,7 @@
+test
+.git*
+*.md
+LICENSE
+.idea
+build
+docker-compose.yml
