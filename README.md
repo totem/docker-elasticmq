@@ -12,6 +12,8 @@ or using docker-compose:
 docker-compose build
 ```
 
+The image is build automatically as part of docker cloud build. All branches / tags are pushed to the hub.
+
 ## Running
 
 ```
