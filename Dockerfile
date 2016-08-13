@@ -17,8 +17,10 @@ RUN \
   # Cleanup
   && rm -rf ~/.cache /tmp/*
 
-EXPOSE 9324
-
 WORKDIR $INSTALL_DIR
 
-CMD ["java", "-jar", "elasticmq-server.jar"]
+ADD conf $INSTALL_DIR/conf
+
+EXPOSE 9324
+
+CMD ["java", "-Dconfig.file=conf/default.conf", "-jar", "elasticmq-server.jar"]

@@ -17,7 +17,7 @@ The image is build automatically as part of docker cloud build. All branches / t
 ## Running
 
 ```
-docker run --rm -p 9324:9324 totem/docker-elasticmq
+docker run --rm --name sqs.local -p 9324:9324 totem/docker-elasticmq
 ```
 
 or using docker-compose:

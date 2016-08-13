@@ -13,5 +13,5 @@ services:
     networks:
       local:
         aliases:
-          - elasticmq.local
+          - sqs.local
     restart: 'on-failure:30'
