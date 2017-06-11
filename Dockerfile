@@ -1,4 +1,4 @@
-FROM java:openjdk-8u131-jre-alpine
+FROM openjdk:8u131-jre-alpine
 ENV INSTALL_DIR /opt/elasticmq
 ENV ELASTICMQ_VERSION 0.13.5
 
